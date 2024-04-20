@@ -64,9 +64,9 @@ console.log(let_myNull);
 // prompt_name
 
 const const_prompt_name = prompt("Будь-ласка, введіть ваше ім'я:");
-console.log("Доброго дня,", const_prompt_name);
+console.log("Ось ваше ім'я:", const_prompt_name)
 let let_prompt_name = prompt("Будь-ласка, введіть ваше ім'я:");
-console.log("Доброго дня,", let_prompt_name);
+console.log("Ось ваше ім'я:", let_prompt_name);
 
 // confirm
 
@@ -76,14 +76,12 @@ if (false == const_confirm) {
 } else {
   alert("Дякую за підтвердження!");
 }
-console.log(const_confirm);
 let let_confirm = confirm("Доброго дня, чи підтверджуєте ви дію?");
 if (false == let_confirm) {
   alert("Дію відмінено!");
 } else {
   alert("Дякую за підтвердження!");
 }
-console.log(let_confirm);
 
 // alert
 
