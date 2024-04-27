@@ -213,7 +213,3 @@
 // console.log(number2)
 // console.log(parse)
 
-
-// let result = String("Вийшло:", suma, "по фарингейту!");
-// let finaleResult = result;
-// window.alert(finaleResult)
