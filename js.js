@@ -213,3 +213,35 @@
 // console.log(number2)
 // console.log(parse)
 
+// lesson №3
+
+// let name = "JavaScript";
+// console.log(name.substring(4, -6));
+
+// DZ №3
+
+// result
+
+// let result = 5 + 5 + "5";
+// console.log(result)
+// console.log(typeof result)
+
+// email
+
+// let email = "artemfedorov1411@gmail.com"
+// console.log(email.indexOf("@"))
+// console.log(email)
+
+// fullName
+
+// let my = "My";
+// let names = "Name";
+// let is = "Is";
+// let fullName = my + names + is + "Viktor";
+// console.log(fullName)
+
+// userName
+
+// let userName = "Олександро";
+// let payment = 300;
+// alert(`Дякуємо, ${userName}! До сплати ${payment} гривень`);
