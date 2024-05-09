@@ -218,21 +218,21 @@
 // let name = "JavaScript";
 // console.log(name.substring(4, -6));
 
-// DZ №3
+// // DZ №3
 
-// result
+// // result
 
 // let result = 5 + 5 + "5";
 // console.log(result)
 // console.log(typeof result)
 
-// email
+// // email
 
 // let email = "artemfedorov1411@gmail.com"
 // console.log(email.indexOf("@"))
 // console.log(email)
 
-// fullName
+// // fullName
 
 // let my = "My";
 // let names = "Name";
@@ -240,8 +240,113 @@
 // let fullName = my + names + is + "Viktor";
 // console.log(fullName)
 
-// userName
+// // userName
 
 // let userName = "Олександро";
 // let payment = 300;
 // alert(`Дякуємо, ${userName}! До сплати ${payment} гривень`);
+
+// lesson №3
+
+// let myName = "Артем Федоров";
+// let javaScript = "JavaScript"
+// console.log(myName.replace("А", "@"))
+// console.log(javaScript.substring(0, 4))
+
+// let gost = "Ваш баланс поповнено на 1000";
+// console.log("фрфрфрфр".padEnd(20, "foo"));
+// "abc".padEnd(10, "foo")
+
+// lesson №4
+
+// let num1 = 10;
+// let num2 = 5;
+// let bigNumber = num1 > num2 ? num1 : num2;
+// console.log(bigNumber)
+
+// let names = prompt("Яка “офіційна” назва JavaScript?");
+// if ((names == "ECMAScript")) {
+//   alert("Правильно");
+// } else {
+//   alert("Ви не знаєте? ECMAScript!");
+// }
+// let result;
+// let premt = parseFloat(prompt("Введіть число:"));
+// if (premt > 0) {
+//   result = 1;
+// } else if (premt < 0) {
+//   result = -1;
+// } else {
+//   result = 0;
+// }
+// alert(result)
+
+// DZ №4
+
+// input №1
+// let button = document.querySelector("button");
+// button.addEventListener("click", () => {
+// let input1 = document.getElementById("input").value;
+// let input2 = document.getElementById("input2").value;
+//
+
+//   if (input1.trim() && input2.trim() !== "") {
+//     alert("Обидва поля заповнені");
+//   } else {
+//     alert("Не всі поля заповнені");
+//   }
+// });
+
+// input №2
+
+// let button = document.querySelector("button");
+
+// button.addEventListener("click", () => {
+//   let input1 = parseFloat(document.getElementById("input").value);
+//   let input2 = parseFloat(document.getElementById("input2").value);
+//   let sum = input1 + input2;
+//   if (sum > 10) {
+//     alert("Сума більша за 10");
+//   } else {
+//     alert("Сума менша або дорівнює 10");
+//   }
+// });
+
+// input №3
+
+// let button = document.querySelector("button");
+// button.addEventListener("click", () => {
+//   let input1 = document.getElementById("input").value;
+
+//   if (input1 == "JavaScript") {
+//     alert("Текст містить слово JavaScript");
+//   } else {
+//     alert("Текст не містить слово JavaScript");
+//   }
+// });
+
+// input №4
+
+// let button = document.querySelector("button");
+
+// button.addEventListener("click", () => {
+//   let input1 = parseFloat(document.getElementById("input").value);
+//   if (input1 >= 10 && input1 < 20) {
+//     alert("Число входить в діапазон від 10 до 20");
+//   } else {
+//     alert("Число не входить в діапазон від 10 до 20");
+//   }
+// });
+
+// input №5
+
+// let button = document.querySelector("button");
+
+// button.addEventListener("click", () => {
+//   let input3 = document.getElementById("input3").value;
+//   if (input3.indexOf("@") !== -1) {
+//     console.log("fafa");
+//   } else {
+//     alert("E-mail має містити @");
+//   }
+// });
