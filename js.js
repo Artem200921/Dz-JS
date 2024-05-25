@@ -288,7 +288,6 @@
 // button.addEventListener("click", () => {
 // let input1 = document.getElementById("input").value;
 // let input2 = document.getElementById("input2").value;
-//
 
 //   if (input1.trim() && input2.trim() !== "") {
 //     alert("Обидва поля заповнені");
@@ -350,3 +349,274 @@
 //     alert("E-mail має містити @");
 //   }
 // });
+
+// lesson №4
+// let num1 = parseFloat(prompt("Введіть перше число: "));
+// let operator = prompt("Введіть дію (+, -, *, /):");
+// let num2 = parseFloat(prompt("Введіть друге число: "));
+// let result;
+// switch (operator) {
+//   case "+":
+//     result = num1 + num2;
+//     break;
+//   case "-":
+//     result = num1 - num2;
+//     break;
+//   case "*":
+//     result = num1 * num2;
+//     break;
+//   case "/":
+//     if (num2 != 0) {
+//       result = num1 / num2;
+//     } else {
+//       console.log("Но но но! Не можна ділити на 0!!!");
+//     }
+//     break;
+//   default:
+//     result = "Інвалід";
+// }
+
+// console.log(result);
+
+// let primpt = parseFloat(prompt("Введіть число для перевірки"));
+// if (primpt >= 55 && primpt <= 99) {
+//   alert("Число потрапляє в діапазон");
+// } else {
+//   alert("Число не потрапляє в діапазон");
+// }
+
+// let maksim = 55;
+// let result;
+// if (maksim >= 0 && maksim <= 16) {
+//   result = "kids";
+// } else {
+//   if (maksim >= 17 && maksim <= 60) {
+//     result = "adult";
+//   } else {
+//     if (maksim >= 61 && maksim <= 100) {
+//       result = "pensioners";
+//     } else {
+//       alert("Помилка!");
+//     }
+//   }
+// }
+
+// alert(result);
+
+// let yourName = prompt("Введіть ваше ім'я");
+// let yourLastName = prompt("Введіть ваше прізвище");
+// if (yourName.length >= 4 && yourLastName.length >= 5) {
+//   alert(parseInt(yourLastName.length) + parseInt(yourName.length));
+// } else {
+//   alert("УПС");
+// }
+
+// DZ №5
+
+// select
+
+// document.querySelector("select").addEventListener("change", function (e) {
+//   alert(`Ви вибрали: ${e.target.value}`);
+// });
+
+// input
+
+// let inputik = prompt("Введіть день тиждня:");
+// switch (inputik) {
+//   case "Понеділок":
+//     alert("Робочий день");
+//     break;
+//   case "Вівторок":
+//     alert("Робочий день");
+//     break;
+//   case "Середа":
+//     alert("Робочий день");
+//     break;
+//   case "Четвер":
+//     alert("Робочий день");
+//     break;
+//   case "П'ятниця":
+//     alert("Робочий день");
+//     break;
+//   case "Суббота":
+//     alert("Вихідний");
+//     break;
+//   case "Неділя":
+//     alert("Вихідний");
+//     break;
+//   default:
+//     alert("Це не є ні робочим днем, ні вихідним");
+// }
+
+// input №2
+
+// let inputik = prompt("Введіть число місяця:");
+// switch (inputik) {
+//   case "12":
+//     alert("Зима");
+//     break;
+//   case "1":
+//     alert("Зима");
+//     break;
+//   case "2":
+//     alert("Зима");
+//     break;
+//   case "3":
+//     alert("Весна");
+//     break;
+//   case "4":
+//     alert("Весна");
+//     break;
+//   case "5":
+//     alert("Весна");
+//     break;
+//   case "6":
+//     alert("Літо");
+//     break;
+//   case "7":
+//     alert("Літо");
+//     break;
+//   case "8":
+//     alert("Літо");
+//     break;
+//   case "9":
+//     alert("Осінь");
+//     break;
+//   case "10":
+//     alert("Осінь");
+//     break;
+//   case "11":
+//     alert("Осінь");
+//     break;
+//   default:
+//     alert("Це не числом місяця");
+// }
+
+// input №3
+
+// let inputik = prompt("Введіть число місяця:");
+// switch (inputik) {
+//   case "12":
+//     alert("Це грудень, в ньому 31 день");
+//     break;
+//   case "1":
+//     alert("Це січень, в ньому 31 день");
+//     break;
+//   case "2":
+//     alert("Це лютий, в ньому 28 день, але, кожні 4 роки в лютому 29 днів");
+//     break;
+//   case "3":
+//     alert("Це березень, в ньому 31 день");
+//     break;
+//   case "4":
+//     alert("Це квітень, в ньому 30 день");
+//     break;
+//   case "5":
+//     alert("Це травень, в ньому 31 день");
+//     break;
+//   case "6":
+//     alert("Це червень, в ньому 30 день");
+//     break;
+//   case "7":
+//     alert("Це липень, в ньому 31 день");
+//     break;
+//   case "8":
+//     alert("Це серпень, в ньому 31 день");
+//     break;
+//   case "9":
+//     alert("Це вересень, в ньому 31 день");
+//     break;
+//   case "10":
+//     alert("Це жовтень, в ньому 31 день");
+//     break;
+//   case "11":
+//     alert("Це листопад, в ньому 30 день");
+//     break;
+//   default:
+//     alert("Це не числом місяця");
+// }
+
+// colors
+
+// let pro = prompt("Введіть колір:");
+
+// if (pro == "Червоний") {
+//   alert("Стоп");
+// } else {
+//   if (pro == "Жовтий") {
+//     alert("Чекати");
+//   } else {
+//     if (pro == "Зелений") {
+//       alert("Йдіть");
+//     } else {
+//       alert("Це не колір який є в списку");
+//     }
+//   }
+// }
+
+// calculater
+
+let number1 = parseFloat(prompt("Введіть перше число:"));
+let operator = prompt("Введіть дію ( + , - , * , /):");
+let number2 = parseFloat(prompt("Введіть друге число:"));
+let result;
+switch (operator) {
+  case "+":
+    result = number1 + number2;
+    break;
+  case "-":
+    result = number1 - number2;
+    break;
+  case "*":
+    result = number1 * number2;
+    break;
+  case "/":
+    if (number2 !== 0) {
+      result = number1 / number2;
+    } else {
+      result = "Не можна ділити на 0!";
+    }
+    break;
+  default:
+    result = "Invalid operation";
+}
+console.log(`Результат : ${result}`);
+
+// lesson №5
+
+// let sum = 10;
+// for (let i = 0; i <= sum; i++){
+//   if (i % 2 === 0) {
+//     continue;
+//   }
+//   console.log(i)
+// }
+
+// let n = 1;
+// while (n <= 5) {
+//   n++;
+//   console.log(n);
+// }
+
+// let employees = 10;
+// let totalSalary;
+// let zp = Math.floor(Math.random() * (5000 - 500 + 1)) + 500;
+
+// for (totalSalary = 1; totalSalary <= employees; totalSalary++) {
+//   totalSalary = totalSalary * zp;
+//   console.log(totalSalary);
+// }
+
+// console.log(totalSalary);
+
+// let min = parseInt(prompt("Введіть число"));
+// let max = parseInt(prompt("Введіть число"));
+// let sum = 0;
+// for (i = min; i <= max; i++) {
+//   if (i % 2 !== 0) {
+//     continue;
+//   }
+//   sum += i;
+// }
+// console.log(sum);
+
