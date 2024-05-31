@@ -556,31 +556,31 @@
 
 // calculater
 
-let number1 = parseFloat(prompt("Введіть перше число:"));
-let operator = prompt("Введіть дію ( + , - , * , /):");
-let number2 = parseFloat(prompt("Введіть друге число:"));
-let result;
-switch (operator) {
-  case "+":
-    result = number1 + number2;
-    break;
-  case "-":
-    result = number1 - number2;
-    break;
-  case "*":
-    result = number1 * number2;
-    break;
-  case "/":
-    if (number2 !== 0) {
-      result = number1 / number2;
-    } else {
-      result = "Не можна ділити на 0!";
-    }
-    break;
-  default:
-    result = "Invalid operation";
-}
-console.log(`Результат : ${result}`);
+// let number1 = parseFloat(prompt("Введіть перше число:"));
+// let operator = prompt("Введіть дію ( + , - , * , /):");
+// let number2 = parseFloat(prompt("Введіть друге число:"));
+// let result;
+// switch (operator) {
+//   case "+":
+//     result = number1 + number2;
+//     break;
+//   case "-":
+//     result = number1 - number2;
+//     break;
+//   case "*":
+//     result = number1 * number2;
+//     break;
+//   case "/":
+//     if (number2 !== 0) {
+//       result = number1 / number2;
+//     } else {
+//       result = "Не можна ділити на 0!";
+//     }
+//     break;
+//   default:
+//     result = "Invalid operation";
+// }
+// console.log(`Результат : ${result}`);
 
 // lesson №5
 
@@ -620,3 +620,145 @@ console.log(`Результат : ${result}`);
 // }
 // console.log(sum);
 
+// lesson №7
+
+// const irr = "JavaScript"
+// for ( i of irr) {
+//   console.log(i)
+// }
+
+// let arr1 = [1, 5, '4', 'hello']
+// let arr2 = [true, 2, {}, ['a'], 222]
+
+// console.log(arr1[1] + arr2[1])
+
+// const cart = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
+// let total = 0;
+// for (i of cart) {
+//   total += i;
+// }
+// console.log(total);
+
+// const arr1 = [1, 5, "4", "hello"];
+// const arr2 = [true, 2, {}, ["a"], 222];
+// console.log(arr1[1]);
+// console.log(arr2[1]);
+// console.log(arr1[1] + arr2[1]);
+
+// console.log("____________");
+
+// arr1[arr1.length] = 22;
+// for (i of arr1) {
+//   console.log(i);
+// }
+
+// console.log("____________");
+
+// for (i of arr2) {
+//   console.log(i);
+//   console.log(typeof i);
+// }
+
+// console.log("____________");
+
+// const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 14];
+// let total = 0;
+// for (i of numbers) {
+//   if (i % 2 === 0) {
+//     total += i;
+//   }
+// }
+// console.log(total);
+
+// console.log("____________");
+
+// const users = ["user1", "user2", "user3"];
+// const pro = prompt("Введіть логін");
+// for (i of users) {
+//   if (i === pro) {
+//     alert("Знайдено");
+//   } else {
+//     alert("Не знайдено");
+//   }
+// }
+
+// if (users.includes(pro)) {
+//   alert("Знайдено");
+// } else {
+//   alert("Не знайдено");
+// }
+
+// DZ №7
+
+// Масив 1
+
+// let a1 = [3, 2, 56];
+
+// a1[1] = 10;
+
+// console.log(a1)
+
+// Масив 2
+
+// let a2 = [
+//   ["a1", "b1", "c1"],
+//   ["a2", "b2", "c2"],
+//   ["a3", "b3", "c3"]
+// ];
+
+// console.log(a2);
+
+// a2[a2.length] = ["a4", "b4", "c4"];
+
+// console.log(a2);
+
+// Масив 3
+
+// let a3 = [1, 4, 8, 8];
+
+// let total = 0;
+
+// for (i of a3) {
+//   total += i;
+// }
+
+// console.log(total);
+
+// Масив 4
+
+// let a4 = [1, 4, 8, 8, 44];
+
+// for (let i = 0; i < a4.length; i++) {
+//   console.log(a5[i])
+// }
+
+// Масив 5
+
+// let a5 = [
+//   [1, 4, 8, 8],
+//   ["H", "H"],
+//   [1, 4, 8, 8, 44],
+//   [4, 4],
+//   ["N", "N"],
+// ];
+
+// for (i of a5) {
+//   if (i.length == 5) {
+//     console.log(i)
+//   }
+// }
+
+// Масив 6
+
+// let a6 = [1, 4, 8, 8, 44, 100, 54, 63, 32, 5];
+// const maxValue = Math.max.apply(null, a6);
+// console.log(maxValue)
+
+// Масив 7
+
+// let a7 = [1, 4, 8, 8, 44, 100, 54, 63, 32, 5];
+// for (let i = 0; i < a7.length; i++) {
+//   if (a7[i] % 2 === 0) {
+//     console.log(a7[i]);
+//   }
+// }

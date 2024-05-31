@@ -90,31 +90,8 @@ body {
 
 body{
   background: #000;
-}
-
-* {
-  font-family: 'Segoe UI';
-}
-
-#content {
-  display: flex;
-}
-
-span {
-  color: white;
-  text-transform: uppercase;
-  font-weight: 500;
-  animation: .3s 0s 1 text normal both running linear;
-  display: block;
-}
-
-@keyframes text {
-  0% {
-    transform: translateY(-40px) scaleX(.7);
-    opacity: .5;
-  }
-
-  70% {
-    transform: scaleY(.7) translateY(2px);
-  }
+  display: flex; 
+  align-items: end;
+  width: 100vw;
+  height: 100vh;
 }
