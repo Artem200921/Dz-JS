@@ -726,10 +726,10 @@
 
 // Масив 4
 
-// let a4 = [1, 4, 8, 8, 44];
+// let a4 = [1, 8, 4, 8, 44];
 
 // for (let i = 0; i < a4.length; i++) {
-//   console.log(a5[i])
+//   console.log(a4[i]);
 // }
 
 // Масив 5
@@ -762,3 +762,153 @@
 //     console.log(a7[i]);
 //   }
 // }
+
+// lesson 8
+
+// let a1 = "Aboba a g are arr";
+// let a2 = [7, 4, 3, 2, 44];
+
+// console.log(a2.indexOf(3))
+
+// console.log(a2);
+// a2.push(132);
+// console.log(a2);
+// let a3 = [
+//   [324, 4214, 53],
+//   [41, 43, 252],
+//   [43, 63, 1553],
+// ];
+// console.log(a3);
+// a3.pop();
+// console.log(a3);
+
+// console.log(a1.split(" "));
+// console.log(a2.join(" "));
+// console.log(a2.join(","));
+// console.log(a2.join("-"));
+
+// console.log(a2.indexOf(1));
+// console.log(a2.indexOf(2));
+// console.log(a2.includes("abia"));
+// console.log(a2.includes("aia"));
+
+// a2.push("aga");
+// console.log(a2);
+// a2.pop();
+// console.log(a2);
+// a2.unshift(43);
+// console.log(a2);
+// a2.shift();
+// console.log(a2);
+
+// lesson 10
+
+// let a9 = [1, 5, 2, 5, 6, 3, 7, 4, 7, 1488];
+// console.log(a9.indexOf(3));
+// console.log(a9);
+
+// let a8 = a9.slice(0, 5);
+
+// console.log(a8);
+
+// let a10 = [
+//   ["a1", "b1", "c1"],
+//   ["a2", "b2", "c2"],
+//   ["a3", "b3", "c3"],
+// ];
+
+// console.log(a10);
+// console.log(a10.join(","));
+
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30];
+
+// let sumi = array1.concat(array2);
+
+// let total = 0;
+
+// for (i of sumi) {
+//   total += i;
+// }
+
+// console.log(sumi);
+
+// let total = 0;
+
+// for (i of array1) {
+//   total += i;
+// }
+
+// for (i of array2) {
+//   total += i;
+// }
+
+// console.log(total);
+
+// const styles = ["Jaz", "Blues"];
+
+// console.log(styles);
+// styles.push("Rock and Roll");
+// console.log(styles);
+// styles.splice(2, 0, "Classic");
+// console.log(styles);
+// console.log(styles.shift());
+// console.log(styles);
+// styles.splice(0, 0, "Rap", "Reggae");
+// console.log(styles);
+
+// let string = "JavaScript"
+// let swap = "";
+// for (let i = 0; i < string.length; i++) {
+//   let a = string[i];
+//   if (a === a.toUpperCase()) {
+//     swap += a.toLowerCase();
+//   } else {
+//     swap += a.toUpperCase();
+//   }
+// }
+// console.log(swap)
+
+// DZ №8
+
+// // 1
+
+// let friends = ["Mango", "Poly", "Kiwi", "Ajax"];
+// let result = "";
+// for (let i = 0; i < friends.length; i++) {
+//   result += friends[i];
+//   if (i !== friends.length - 1) {
+//     result += ", ";
+//   }
+// }
+// console.log(result);
+
+// console.log(friends.join(", "))
+
+// // 2
+
+// let cards = [
+//   "Карточка-1",
+//   "Карточка-2",
+//   "Карточка-3",
+//   "Карточка-4",
+//   "Карточка-5",
+// ];
+// console.log("__________1___________"); 
+// console.log(cards);
+
+// cards.splice(2, 1);
+
+// console.log("__________2___________") 
+
+// console.log(cards);
+
+// cards.splice(2, 0, "Карточка-6");
+
+// console.log("__________3___________"); 
+
+// console.log(cards);
+
+// cards.splice(3, 1, "Карточка-4");
+
+// console.log(cards);
