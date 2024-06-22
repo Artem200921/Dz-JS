@@ -894,21 +894,216 @@
 //   "Карточка-4",
 //   "Карточка-5",
 // ];
-// console.log("__________1___________"); 
+// console.log("__________1___________");
 // console.log(cards);
 
 // cards.splice(2, 1);
 
-// console.log("__________2___________") 
+// console.log("__________2___________")
 
 // console.log(cards);
 
 // cards.splice(2, 0, "Карточка-6");
 
-// console.log("__________3___________"); 
+// console.log("__________3___________");
 
 // console.log(cards);
 
 // cards.splice(3, 1, "Карточка-4");
 
 // console.log(cards);
+
+// lesson 10
+
+// function sum(ar) {
+//   let totalSuma = 0;
+//   for (i of ar) {
+//     totalSuma += i;
+//   }
+//   return totalSuma / ar.length;
+// }
+// const arr = [3, 3];
+// console.log(sum(arr));
+
+// function sum() {
+//   let totalSuma = 0;
+//   for (i of arguments) {
+//     totalSuma += i;
+//   }
+//   return totalSuma / arguments.length;
+// }
+
+// console.log(sum(2,2));
+
+// function am(a) {
+//   if (a % 2 === 0) {
+//     console.log(true)
+//   } else {
+//     console.log(false)
+//   }
+// }
+
+// console.log(am(3));
+
+// function sum(ar) {
+//   let total = Math.max.apply(null, ar);
+//   return total;
+// }
+// const arr = [5, 1, 4, 2, 100];
+// console.log(sum(arr));
+
+// function factorial(n) {
+//   return n != 1 ? n * factorial(n - 1) : 1;
+// }
+
+// console.log(factorial(4));
+
+// function myAverageScore(arr) {
+//   for (aru of arr) {
+//     if (aru > 91 && aru < 100) {
+//       console.log("My average score: A");
+//     } else if (aru > 81 && aru < 90) {
+//       console.log("My average score: B");
+//     } else if (aru > 71 && aru < 80) {
+//       console.log("My average score: C");
+//     } else if (aru <= 70) {
+//       console.log("My average score: D");
+//     }
+//   }
+//   }
+//   console.log(myAverageScore([100, 75, 81, 96]));
+
+// DZ №9
+
+// 1
+
+// function logItems(array) {
+//   for (let i = 0; i < array.length; i++) {
+//     console.log(`${i + 1} - ${array[i]}`);
+//   }
+// }
+
+// const myArray = ["Mango", "Poly", "Ajax"];
+// logItems(myArray);
+
+// // 2
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//   const words = message.split(" ");
+
+//   const totalCost = words.length * pricePerWord;
+
+//   return totalCost;
+// }
+
+// const messages = "Це приклад повідомлення для гравіювання";
+
+// const result = calculateEngravingPrice(messages, 10);
+
+// console.log(`Вартість гравіювання: $${result}`);
+
+// 3
+
+// function longestWord(string) {
+//   const word = string.split(" ");
+//   let longest = "";
+
+//   for (let i = 0; i < word.length; i++) {
+//     if (longest.length < word[i].length) {
+//       longest = word[i];
+//     }
+//   }
+
+//   return longest;
+// }
+
+// // Приклад виклику функції:
+// const inputString = "a wf attatatattatatat";
+// const longestWord = longestWord(inputString);
+// console.log("Найдовше слово: " + longestWord);
+
+// 4
+
+// function formatString(string) {
+//   if (string.length <= 40) {
+//     return string;
+//   } else {
+//     return string.slice(0, 40) + "...";
+//   }
+// }
+
+// // Приклад виклику функції:
+// const inputString = "Це приклад рядка, який може бути довшим за 40 символів.";
+// const formattedString = formatString(inputString);
+// console.log("Форматований рядок: " + formattedString);
+
+// 5
+
+// function checkingWord(message) {
+//   message = message.toLowerCase();
+//   if (message.includes("spam") || message.includes("sale")) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   }
+// }
+
+// checkingWord("ahahdsg sd sale");
+
+// 6
+
+// let input;
+// const numbers = [];
+// let total = 0;
+
+// while (true) {
+//   input = prompt("Введіть число:");
+//   if (input === null) {
+//     break;
+//   }
+//   const parseNumber = parseFloat(input);
+//   if (!isNaN(parseNumber)) {
+//     numbers.push(parseNumber);
+//   } else {
+//     alert("Було введено не число, спробуйте ще раз.");
+//   }
+// }
+
+// if (numbers.length > 0) {
+//   for (const number of numbers) {
+//     total += number;
+//   }
+//   console.log(`Загальна сума чисел дорівнює ${total}`);
+// }
+
+// 7
+
+// function isLoginValid(login) {
+//   const minLength = 4;
+//   const maxLength = 16;
+//   return login.length >= minLength && login.length <= maxLength;
+// }
+
+// function isLoginUnique(allLogins, login) {
+//   return !allLogins.includes(login);
+// }
+
+// function addLogin(allLogins, login) {
+//   if (!isLoginValid(login)) {
+//     return 'Помилка! Логін повинен бути від 4 до 16 символів';
+//   }
+
+//   if (!isLoginUnique(allLogins, login)) {
+//     return 'Такий логін уже використовується!';
+//   }
+
+//   allLogins.push(login);
+//   return 'Логін успішно доданий!';
+// }
+
+// const logins = ['Jordan', 'Marzia', 'Ryan'];
+// const newLogin = prompt("Введіть логін:");
+
+// console.log(addLogin(logins, newLogin));
+// console.log(logins)
+
