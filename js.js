@@ -1107,3 +1107,315 @@
 // console.log(addLogin(logins, newLogin));
 // console.log(logins)
 
+// DZ №10
+
+// 1
+
+// const button = document.getElementById("butt");
+
+// button.addEventListener("click", () => {
+//   alert("Hello World!");
+// });
+
+// 2
+
+// const targetNumber = Math.floor(Math.random() * 100) + 1;
+
+// const userGuess = parseInt(prompt("Введіть число від 1 до 100:"));
+
+// if (userGuess === targetNumber) {
+//     alert("Вітаємо! Ви вгадали число!");
+// } else {
+//     alert(`На жаль, правильне число було ${targetNumber}. Спробуйте ще раз!`);
+// }
+
+// 3
+
+// const button = document.getElementById("myButton");
+
+// let clickCount = 0;
+
+// button.addEventListener("click", () => {
+//   clickCount++;
+//   console.log(`Кількість кліків: ${clickCount}`);
+// });
+
+// 4
+
+// class
+
+// let hotel = {
+//   name: 'Hotel',
+//   stars: 5,
+//   showStars() {
+//     console.log(this.stars)
+//   },
+//   changeStars(value) {
+//     this.stars = value;
+//   }
+// }
+// hotel.showStars();
+// hotel.changeStars(6);
+// hotel.showStars();
+
+// 2
+
+// let myArray = {
+//   name: "Artem",
+//   ages: 14,
+//   city: "Kiev",
+//   occupation: "No",
+//   increaseAge(age) {
+//     return this.ages + age;
+//   },
+//   changeOccupation(position) {
+//     return this.occupation = position;
+//   },
+// };
+// // NAME
+// console.log(myArray.name);
+// myArray.name = "Igor";
+// console.log(myArray.name);
+// // AGE
+// console.log(myArray.ages);
+// myArray.ages = 20;
+// console.log(myArray.ages);
+// console.log(myArray.increaseAge(2));
+// // CITY
+// console.log(myArray.city);
+// myArray.city = "Donbas";
+// console.log(myArray.city);
+// // OCCUPATION
+// console.log(myArray.occupation);
+// myArray.occupation = "Flower shop";
+// console.log(myArray.occupation);
+// console.log(myArray.changeOccupation("Front-end developer"));
+
+// DZ №11
+
+// 1
+
+// let bankAccount = {
+//   ownerName: "Іван",
+//   accountNumber: "123456",
+//   balance: 1000,
+//   deposit(amount) {
+//     this.balance += amount;
+//     console.log(
+//       `Рахунок поповнено на ${amount} грн. Загальний баланс: ${this.balance} грн.`
+//     );
+//   },
+//   withdraw(amount) {
+//     if (this.balance >= amount) {
+//       this.balance -= amount;
+//       console.log(
+//         `Знято ${amount} грн. Загальний баланс: ${this.balance} грн.`
+//       );
+//     } else {
+//       console.log("Недостатньо коштів на рахунку!");
+//     }
+//   },
+// };
+
+// let button1 = document.getElementById("button1");
+
+// button1.addEventListener("click", () => {
+//   let input1 = parseInt(document.getElementById("input1").value);
+//   bankAccount.deposit(input1);
+// });
+
+// let button2 = document.getElementById("button2");
+
+// button2.addEventListener("click", () => {
+//   let input2 = parseInt(document.getElementById("input2").value);
+//   bankAccount.withdraw(input2);
+// });
+
+// 2
+
+// let weather = {
+//   temperature: 0,
+//   humidity: "53%",
+//   windSpeed: "4 km/h",
+//   selectTemp(c) {
+//     if (c < 0) {
+//       console.log(true);
+//     } else {
+//       console.log(false);
+//     }
+//   },
+// };
+
+// let p = parseInt(prompt("Напишіть температуру:"));
+// weather.selectTemp(p);
+
+// 3
+
+// let user = {
+//   name: "Artem",
+//   email: "fedorovartem1411@gmail.com",
+//   password: "123456",
+//   login(e, p) {
+//     if (e === this.email && p === this.password) {
+//       alert("Ви успішно зайшли в аккаунт!");
+//     } else if (e !== this.email || p !== this.password) {
+//       alert("Невірний емейл чи пароль!");
+//     } else {
+//       alert("Unknown error");
+//     }
+//   },
+// };
+
+// let emailP = prompt("Введіть адресу:");
+// let passwordP = prompt("Введіть пароль:");
+
+// user.login(emailP, passwordP);
+
+// 4
+
+// let target = document.querySelector("#div");
+
+// let movie = {
+//   title: "Хлопаки",
+//   directors:
+//     "	Стефан Шварц, Філіп Сгріккіа, Фред Туа, Деніел Еттіес, Ерік Кріпке, Дженніфер Фанг, Метт Шекман, Ден Трахтенберг, Сара Бойд, Стів Бойум, Ліз Фрідлендер, Себастіан Сільва",
+//   year: 2019,
+//   rating: 8,
+//   checker() {
+//     if (this.rating >= 8) {
+//       target.insertAdjacentHTML(
+//         "afterBegin",
+//         `<p class='p'>${movie.rating}</p>`
+//       );
+//       target.insertAdjacentHTML("afterBegin", `<p class='p'>${movie.year}</p>`);
+//       target.insertAdjacentHTML(
+//         "afterBegin",
+//         `<p class='p'>${movie.directors}</p>`
+//       );
+//       target.insertAdjacentHTML(
+//         "afterBegin",
+//         `<a class='p__true' href="https://uakino.club/seriesss/drama_series/10304-hlopc-hlopaki-1-sezon.html" target="_blank">${movie.title}</a>`
+//       );
+//     } else {
+//       target.insertAdjacentHTML(
+//         "afterBegin",
+//         `<p class='p'>${movie.rating}</p>`
+//       );
+//       target.insertAdjacentHTML("afterBegin", `<p class='p'>${movie.year}</p>`);
+//       target.insertAdjacentHTML(
+//         "afterBegin",
+//         `<p class='p'>${movie.directors}</p>`
+//       );
+//       target.insertAdjacentHTML(
+//         "afterBegin",
+//         `<a class='p' href="https://uakino.club/seriesss/drama_series/10304-hlopc-hlopaki-1-sezon.html" target="_blank">${movie.title}</a>`
+//       );
+//     }
+//   },
+// };
+
+// movie.checker()
+
+// class
+
+// let person = {
+//   name: "George",
+//   age: 28,
+//   gender: "Man",
+//   search() {
+//     for (let i of Object.entries(person)) {
+//       const key = i[0];
+//       const value = i[1];
+//       console.log(`${key}: ${value}`);
+//     }
+//   },
+// };
+
+// person.search()
+
+// book
+
+// let book = {
+//   title: "Гарі Потер",
+//   author: "Джоан Роулінг",
+//   year: 2001,
+//   genre: 'Фентезі',
+//   change(key, value) {
+//     book[key] = value
+//   }
+// };
+
+// book.change('title', 'Harry Potter')
+// console.log(book.title)
+// book.change("author", "Joanne Rowling");
+// console.log(book.author)
+// book.change("year", 2005);
+// console.log(book.year)
+// book.change("genre", 'Fantasy');
+// console.log(book.genre)
+
+// console.log(book)
+
+// class
+
+// let products = [
+//   {
+//     name: "Apple",
+//     price: 2,
+//     category: "Fruits",
+//     stock: 1,
+//   },
+//   {
+//     name: "Banana",
+//     price: 5,
+//     category: "Fruits",
+//     stock: 7,
+//   },
+//   {
+//     name: "Tomato",
+//     price: 10,
+//     category: "Vegetables",
+//     stock: 10,
+//   },
+// ];
+
+// function summing(products, category) {
+//   let total = 0;
+//   for (const product of products) {
+//     if (product.category === category) {
+//       total += product.price * product.stock;
+//     }
+//   }
+//   return total;
+// }
+
+// const category = "Vegetables";
+// const stock = summing(products, category);
+// console.log(
+//   `Загальна вартість товарів в наявності у категорії "${category}": $${stock}`
+// );
+
+// 2
+
+// let person = {
+//   firstName: "Artem",
+//   lastName: "Fedorov",
+//   fullName() {
+//     return `Ім'я - ${this.firstName} прізвище - ${this.lastName}`;
+//   },
+// };
+
+// alert(person.fullName())
+
+// 3
+
+// let product = {
+//   name: "Mobile phone",
+//   price: 1000,
+//   quantity: 3,
+//   prices() {
+//     return `Ціна - ${this.price} $`;
+//   },
+// };
+
+// console.log(product.price)
