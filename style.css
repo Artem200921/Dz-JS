@@ -111,4 +111,13 @@ body{
   color: black;
 }
 
+/* for DZ 10 */
+
+#myButton{
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  border: none;
+}
+
 

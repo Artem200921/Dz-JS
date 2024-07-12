@@ -1158,6 +1158,8 @@
 // hotel.changeStars(6);
 // hotel.showStars();
 
+// class
+
 // 2
 
 // let myArray = {
@@ -1419,3 +1421,270 @@
 // };
 
 // console.log(product.price)
+
+// class
+
+// 1
+
+// let person = {
+//   name: "Igor",
+//   last: "Redko",
+//   age: 20,
+// };
+
+// function searcher(obj) {
+//   const { name, last, age } = obj;
+//   console.log(`Мене звати ${name} ${last} і мені ${age} років`);
+// }
+
+// searcher(person);
+
+// 2
+
+// const car = {
+//   make: "Toyota",
+//   model: "Camry",
+//   year: 2020,
+//   features: ["power windows", "rear camera", "navigation"],
+//   safety: {
+//     airbags: true,
+//     antilock_brakes: true,
+//     stability_control: true,
+//   },
+// };
+
+// const { make, model, year, features, safety } = car;
+// console.log(make, model, year, features, safety);
+
+// 3
+
+// const movie = {
+//   title: "The Shawshank Redemption",
+//   director: {
+//     name: "Frank Darabont",
+//     nationality: "American",
+//   },
+//   actors: ["Tim Robbins", "Morgan Freeman"],
+//   release_year: 1994,
+//   ratings: {
+//     imdb: 9.3,
+//     rotten_tomatoes: 90,
+//   },
+// };
+
+// const { title, director, actors, release_year, ratings } = movie;
+// console.log(title, director, actors, release_year, ratings);
+
+// 4
+
+// const student = {
+//   name: "Bruce",
+//   surname: "Lee",
+//   grades: [4, 5, 3],
+// };
+
+// function find(obj) {
+//   const { grades } = obj;
+//   const [first, second, third] = grades
+//   return `Середня оцінка: ${(first + second + third) / 3}`
+// }
+
+// console.log(find(student))
+
+// 5
+
+// const items = [
+//   { name: "Футболка", price: 250, quantity: 2 },
+//   { name: "Джинси", price: 800, quantity: 1 },
+//   { name: "Кросівки", price: 1200, quantity: 1 },
+// ];
+
+// function calc(items) {
+//   let total = 0;
+
+//   for (const i of items) {
+//     const { price, quantity } = i
+//     total += price * quantity;
+//   }
+
+//   return total;
+// }
+
+// console.log(`Загальна вартість товарів: ${calc(items)}$`);
+
+// 6
+
+// const person = {
+//   name: "John",
+//   emails: ["john@gmail.com", "john@example.com", "john123@yahoo.com"],
+// };
+
+// function first(obj) {
+//   const [first] = obj.emails
+//   return first;
+// }
+
+// console.log(`Перший емейл: ${first(person)}`)
+
+// 7
+
+// const data = {
+//   users: [
+//     { name: "John", age: 25 },
+//     { name: "Jane", age: 17 },
+//     { name: "Bob", age: 30 },
+//     { name: "Alice", age: 20 },
+//   ],
+// };
+
+// function adult(data) {
+//   const { users } = data;
+//   const adultUsers = users.filter(({ age }) => age > 18);
+//   return adultUsers;
+// }
+
+// console.log(adult(data));
+
+// 8
+
+// const musicLibrary = {
+//   count: 2,
+//   artists: [
+//     {
+//       name: "The Beatles",
+//       albums: [
+//         {
+//           title: "Sgt. Pepper's Lonely Hearts Club Band",
+//           year: 1967,
+//           tracks: [
+//             { title: "With a Little Help from My Friends", duration: "2:44" },
+//             { title: "Lucy in the Sky with Diamonds", duration: "3:28" },
+//             { title: "A Day in the Life", duration: "5:33" },
+//           ],
+//         },
+//         {
+//           title: "Abbey Road",
+//           year: 1969,
+//           tracks: [
+//             { title: "Come Together", duration: "4:19" },
+//             { title: "Something", duration: "3:01" },
+//             { title: "Here Comes the Sun", duration: "3:06" },
+//           ],
+//         },
+//       ],
+//     },
+//     {
+//       name: "Pink Floyd",
+//       albums: [
+//         {
+//           title: "The Wall",
+//           year: 1979,
+//           tracks: [
+//             { title: "Another Brick in the Wall, Part 2", duration: "3:59" },
+//             { title: "Comfortably Numb", duration: "6:23" },
+//             { title: "Hey You", duration: "4:40" },
+//           ],
+//         },
+//         {
+//           title: "Dark Side of the Moon",
+//           year: 1973,
+//           tracks: [
+//             { title: "Speak to Me/Breathe", duration: "3:58" },
+//             { title: "Time", duration: "7:06" },
+//             { title: "Money", duration: "6:22" },
+//           ],
+//         },
+//       ],
+//     },
+//   ],
+// };
+
+// const {
+//   artists: [
+//     {
+//       albums: [title, year],
+//     },
+//   ],
+// } = musicLibrary;
+
+// console.log(title);
+// console.log(year);
+
+// DZ №12
+
+// 1
+
+// const button = document.getElementById("butt");
+
+// const obj = {
+//   name1: "Hello World!",
+// };
+
+// const { name1 } = obj;
+
+// button.addEventListener("click", () => {
+//   alert(name1);
+// });
+
+// 2
+
+// const target = {
+//   rand: Math.floor(Math.random() * 100) + 1,
+//   pars: parseInt(prompt("Введіть число від 1 до 100:")),
+// };
+
+// const { rand, pars} = target;
+
+// pars;
+
+// if (pars === rand) {
+//   alert("Вітаємо! Ви вгадали число!");
+// } else {
+//   alert(`На жаль, правильне число було ${rand}. Спробуйте ще раз!`);
+// }
+
+// 3
+
+// const obj = { button: document.getElementById("myButton") };
+
+// const { button } = obj;
+
+// let clickCount = 0;
+
+// button.addEventListener("click", () => {
+//   clickCount++;
+//   console.log(`Кількість кліків: ${clickCount}`);
+// });
+
+// 4
+
+// function applyCallbackToEachElement(arr, callback) {
+//   const result = [];
+//   for (const element of arr) {
+//     result.push(callback(element));
+//   }
+//   return result;
+// }
+
+// const arr = [1, 2, 3, 4, 5];
+// const squareCallback = (x) => x * x;
+
+// const squaredArray = applyCallbackToEachElement(arr, squareCallback);
+// console.log(squaredArray);
+
+// 5
+
+// const obj = {
+//   price: 100,
+//   discount: 10,
+// };
+
+// const { price, discount } = obj;
+
+// const calculateDiscountedPrice = (price, discount) => {
+//   const discountedPrice = price * (1 - discount / 100);
+//   return discountedPrice;
+// };
+
+// const finalPrice = calculateDiscountedPrice(price, discount);
+// console.log(`Дисконтна ціна: ${finalPrice} грн`);
