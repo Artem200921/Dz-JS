@@ -1688,3 +1688,167 @@
 
 // const finalPrice = calculateDiscountedPrice(price, discount);
 // console.log(`Дисконтна ціна: ${finalPrice} грн`);
+
+// class
+
+// 1
+
+// const array = [32, 4, 5, 2, 56, 34, 20];
+
+// const result = array.filter((num) => {
+//   return num % 2 === 0;
+// });
+
+// console.log(result);
+
+// 2
+
+// const players = [
+//   { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
+//   { id: "player-2", name: "Poly", timePlayed: 470, points: 92, online: true },
+//   { id: "player-3", name: "Kiwi", timePlayed: 230, points: 48, online: true },
+//   { id: "player-4", name: "Ajax", timePlayed: 150, points: 71, online: false },
+//   { id: "player-5", name: "Chelsy", timePlayed: 80, points: 48, online: true },
+// ];
+
+// const result = players.map((num) => {
+//   parseInt(num.points *= 1.1);
+// });
+
+// console.log(result);
+
+// console.log(players);
+
+// _____________________________________________
+
+// const players = [
+//   { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
+//   { id: "player-2", name: "Poly", timePlayed: 470, points: 92, online: true },
+//   { id: "player-3", name: "Kiwi", timePlayed: 230, points: 48, online: true },
+//   { id: "player-4", name: "Ajax", timePlayed: 150, points: 71, online: false },
+//   { id: "player-5", name: "Chelsy", timePlayed: 80, points: 48, online: true },
+// ];
+
+// const online = players.filter((player) => player.online);
+
+// console.log(online);
+
+// 3
+
+// const people = [
+//   { name: "John", age: 32, occupation: "programmer" },
+//   { name: "Jane", age: 26, occupation: "teacher" },
+//   { name: "Mike", age: 42, occupation: "engineer" },
+//   { name: "Emily", age: 17, occupation: "designer" },
+// ];
+
+// const res = people.map((num) => {
+//   num.age > 18 ? console.log(num.name, num.age) : console.log("Є людина якій меньше за 18!");
+// });
+
+// 4
+
+// const array1 = [1, 2, 3, 44, 4, 5, 6, 6, 7];
+// const array2 = [5, 12, 3, 14, 4, 5, 6, 6, 7];
+
+// const combined = array1.concat(array2);
+
+// let total = [];
+// for (let i = 0; i < combined.length; i++) {
+//   if (total.indexOf(combined[i]) === -1) {
+//     total.push(combined[i]);
+//   }
+// }
+
+// console.log(total);
+
+// DZ №14
+
+// 1
+
+const names = [
+  {
+    name: "Artem",
+    age: 14,
+    colour_eye: "Brown",
+    gender: "Boy",
+    activity: true,
+    email: "artem@gmail.com",
+  },
+  {
+    name: "Egor",
+    age: 13,
+    colour_eye: "Blue",
+    gender: "Boy",
+    activity: false,
+    email: "egor@gmail.com",
+  },
+  {
+    name: "Ivan",
+    age: 24,
+    colour_eye: "Brown",
+    gender: "Boy",
+    activity: false,
+    email: "ivan@gmail.com",
+  },
+  {
+    name: "Jenny",
+    age: 12,
+    colour_eye: "Blue",
+    gender: "Girl",
+    activity: false,
+    email: "jenny@gmail.com",
+  },
+];
+
+let array = [];
+
+// const res = names.map((num) => {
+//   array.push(num.name);
+// });
+
+// console.log(array)
+
+// 2
+
+// const res = names.map(eye => {
+//   eye.colour_eye === "Brown"
+//     ? array.push(eye.name)
+//     : console.log();
+// })
+
+// console.log(array)
+
+// 3
+
+// const res = names.map(gender => {
+//   gender.gender === "Girl"
+//     ? array.push(gender.name)
+//     : console.log();
+// })
+
+// console.log(array)
+
+// 4
+
+// const res = names.map((actv) => {
+//   actv.activity === false ? array.push(actv.name, actv.activity) : console.log();
+// });
+
+// console.log(array)
+
+// 5
+
+// const res = names.map((emai) => {
+//   emai.email === "jenny@gmail.com" ? array.push(emai.name) : console.log;
+// });
+
+// console.log(array)
+
+// 6
+
+// const res = names.map(ag => {
+//   ag.age >= 14 && ag.age <= 24 ? array.push(ag.name) : console.log()
+// })
+
+// console.log(array)
