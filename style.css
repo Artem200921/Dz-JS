@@ -88,36 +88,36 @@ body {
   color: #fff;
 } */
 
-body{
+body {
   /* background: #000; */
-  display: flex; 
-  align-items: center;
-  justify-content: center;
+
   width: 100vw;
   height: 100vh;
 }
 
-#div{
+#div {
   padding: 0 10px;
 }
 
-.p__true{
+.p__true {
   font-weight: 700;
   color: green;
 }
 
-.p{
+.p {
   font-weight: 700;
   color: black;
 }
 
 /* for DZ 10 */
 
-#myButton{
+#myButton {
   width: 100vw;
   height: 100vh;
   background-color: transparent;
   border: none;
 }
 
-
+.style {
+  border: red 1px solid;
+}

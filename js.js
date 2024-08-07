@@ -1766,42 +1766,42 @@
 
 // 1
 
-const names = [
-  {
-    name: "Artem",
-    age: 14,
-    colour_eye: "Brown",
-    gender: "Boy",
-    activity: true,
-    email: "artem@gmail.com",
-  },
-  {
-    name: "Egor",
-    age: 13,
-    colour_eye: "Blue",
-    gender: "Boy",
-    activity: false,
-    email: "egor@gmail.com",
-  },
-  {
-    name: "Ivan",
-    age: 24,
-    colour_eye: "Brown",
-    gender: "Boy",
-    activity: false,
-    email: "ivan@gmail.com",
-  },
-  {
-    name: "Jenny",
-    age: 12,
-    colour_eye: "Blue",
-    gender: "Girl",
-    activity: false,
-    email: "jenny@gmail.com",
-  },
-];
+// const names = [
+//   {
+//     name: "Artem",
+//     age: 14,
+//     colour_eye: "Brown",
+//     gender: "Boy",
+//     activity: true,
+//     email: "artem@gmail.com",
+//   },
+//   {
+//     name: "Egor",
+//     age: 13,
+//     colour_eye: "Blue",
+//     gender: "Boy",
+//     activity: false,
+//     email: "egor@gmail.com",
+//   },
+//   {
+//     name: "Ivan",
+//     age: 24,
+//     colour_eye: "Brown",
+//     gender: "Boy",
+//     activity: false,
+//     email: "ivan@gmail.com",
+//   },
+//   {
+//     name: "Jenny",
+//     age: 12,
+//     colour_eye: "Blue",
+//     gender: "Girl",
+//     activity: false,
+//     email: "jenny@gmail.com",
+//   },
+// ];
 
-let array = [];
+// let array = [];
 
 // const res = names.map((num) => {
 //   array.push(num.name);
@@ -1832,10 +1832,12 @@ let array = [];
 // 4
 
 // const res = names.map((actv) => {
-//   actv.activity === false ? array.push(actv.name, actv.activity) : console.log();
+//   actv.activity === false
+//     ? array.push(actv.name, actv.activity)
+//     : console.log();
 // });
 
-// console.log(array)
+// console.log(array);
 
 // 5
 
@@ -1852,3 +1854,305 @@ let array = [];
 // })
 
 // console.log(array)
+
+// class
+
+// 1
+
+// const players = [
+//   { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
+//   { id: "player-2", name: "Poly", timePlayed: 470, points: 92, online: true },
+//   { id: "player-3", name: "Kiwi", timePlayed: 230, points: 48, online: true },
+//   { id: "player-4", name: "Ajax", timePlayed: 150, points: 71, online: false },
+//   { id: "player-5", name: "Chelsy", timePlayed: 80, points: 48, online: true },
+// ];
+
+// const res = players.reduce((acc, value) => acc + value.timePlayed, 0);
+// console.log(res);
+
+// 1.2
+
+// const res = players.reduce((acc, value) => acc + value.points, 0);
+// console.log(res);
+
+// 1.3
+
+// const mid = res / players.length;
+// console.log(mid)
+
+// 2
+
+// const tweets = [
+//   { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//   { id: "001", likes: 2, tags: ["html", "css"] },
+//   { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//   { id: "003", likes: 8, tags: ["css", "react"] },
+//   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+// ];
+
+// let array = [];
+
+// const res = tweets.reduce((acc, value) => {
+//   array.push(...value.tags);
+//   return array;
+// });
+
+// console.log(res);
+
+// 2.2
+
+// const stat = {};
+
+// tweets.forEach((tweet) => {
+//   tweet.tags.forEach((tag) => {
+//     if (stat[tag]) {
+//       stat[tag]++;
+//     } else {
+//       stat[tag] = 1;
+//     }
+//   });
+// });
+
+// console.log(stat);
+
+// class
+
+// 1
+
+// const arr = ["Artem", "Dan", "Ban", "Ivan", "Johny"];
+// console.log(arr)
+// console.log(arr.sort())
+
+// 2
+
+// const names = [
+//   {
+//     name: "John",
+//     dayActivity: 2,
+//   },
+//   {
+//     name: "Lusy",
+//     dayActivity: 51,
+//   },
+//   {
+//     name: "Igor",
+//     dayActivity: 7,
+//   },
+// ];
+
+// const sorting = (a, b) => b.dayActivity - a.dayActivity;
+// console.log(names.sort(sorting));
+
+// 3
+
+// const players = [
+//   { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
+//   { id: "player-2", name: "Poly", timePlayed: 470, points: 92, online: true },
+//   { id: "player-3", name: "Kiwi", timePlayed: 230, points: 48, online: true },
+//   { id: "player-4", name: "Ajax", timePlayed: 150, points: 71, online: false },
+//   { id: "player-5", name: "Chelsy", timePlayed: 80, points: 48, online: true },
+// ];
+
+// Time
+
+// const sorting = (a, b) => a.timePlayed - b.timePlayed;
+
+// console.log(players.sort(sorting));
+
+// Points
+
+// const sortingPoints = (a, b) => a.points - b.points;
+
+// console.log(players.sort(sortingPoints))
+
+// 4
+
+// const cart = [
+//   { label: "Apples", price: 100, quantity: 2 },
+//   { label: "Bananas", price: 120, quantity: 3 },
+//   { label: "Lemons", price: 70, quantity: 4 },
+// ];
+
+// const res = cart.reduce((acc, value) => acc + value.quantity, 0);
+
+// console.log(res)
+
+// 5
+
+// const arr = [
+//   { name: "John", age: 32 },
+//   { name: "Jane", age: 26 },
+//   { name: "Mike", age: 42 },
+//   { name: "Artem", age: 29 },
+// ];
+
+// arr.sort((a, b) => a.name.localeCompare(b.name))
+
+// console.log(arr)
+
+// class
+
+// 1
+
+// class Person {
+//   constructor(firstName, lastName) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//   };
+//   getFullName(firstName, lastName) {
+//     return `${this.firstName} ${this.lastName}`
+//   };
+// }
+
+// const person1 = new Person("John", "Doe");
+// console.log(person1.getFullName());
+
+// 2
+
+// class Rectangle {
+//   constructor(width, height) {
+//     this.width = width;
+//     this.height = height;
+//   }
+//   getArea(width, height) {
+//     return this.width * this.height;
+//   }
+// }
+
+// const rectangle1 = new Rectangle(10, 5);
+// console.log(rectangle1.getArea());
+
+// 3
+
+// class Calculator {
+//   constructor(firstNum, secondNum) {
+//     this.firstNum = firstNum
+//     this.secondNum = secondNum
+//   }
+//   add(firstNum, secondNum) {
+//     return firstNum + secondNum;
+//   }
+//   subtract(firstNum, secondNum) {
+//     return firstNum - secondNum;
+//   }
+//   multiply(firstNum, secondNum) {
+//     return firstNum * secondNum
+//   }
+//   divide(firstNum, secondNum) {
+//     if (firstNum / secondNum === Infinity) {
+//       return "Ділити на нуль не можна!";
+//     } else {
+//       return firstNum / secondNum;
+//     }
+//   }
+// }
+
+// const calculator = new Calculator();
+// console.log(calculator.add(2, 3)); // 5
+// console.log(calculator.subtract(5, 2)); // 3
+// console.log(calculator.multiply(2, 4)); // 8
+// console.log(calculator.divide(10, 2)); // 5
+// console.log(calculator.divide(10, 0));
+
+// 4
+
+// class Product {
+//   constructor(productName, price, discount) {
+//     this.productName = productName;
+//     this.price = price;
+//     this.discount = discount;
+//   }
+//   getDiscountPrice() {
+//     return this.price - this.price * (this.discount / 100);
+//   }
+// }
+
+// const product1 = new Product("Phone", 500, 20);
+
+// if (product1.getDiscountPrice() === Product.price) {
+//   console.log(`Ціна без знижки: ${Product.price}`);
+// } else {
+//   console.log(`Ціна зі знижкою: ${product1.getDiscountPrice()}`);
+// }
+
+// DZ №15
+
+// 1
+
+const people = [
+  { name: "Ivan", balance: 100, friend: "Mark", friends: 2, skill:"Fly" },
+  { name: "Tom", balance: 200, friend: "Mark", friends: 6, skill:"Fly" },
+  { name: "Leim", balance: 400, friend: "Artem", friends: 3, skill:"Ice punch" },
+];
+
+// const res = people.reduce((acc, bal) => acc + bal.balance, 0);
+
+// console.log(res);
+
+// 2
+
+// let arr = [];
+
+// const res = people.map((person) => (person.friend === "Mark") ? arr.push(person.name) : console.log())
+
+// console.log(arr);
+
+// 3
+
+// let arr = [];
+
+// const first = (a, b) => b.friends - a.friends;
+
+// const resu = people
+//   .sort((a, b) => b.friends - a.friends)
+//   .map((person) => person.name);
+
+// arr.push(resu);
+
+// console.log(arr);
+
+// 4
+
+// const uniqueSkills = [...new Set(people.map(person => person.skill))].sort();
+
+// console.log(uniqueSkills);
+
+// class
+
+// 1
+
+// const li = document.querySelectorAll("[class]");
+
+// console.log(li)
+
+// class
+
+// 1
+
+// const list = document.querySelector("ul");
+
+// list.style = "background-color: yellow";
+
+// 2
+
+// const link = document.querySelector("a");
+
+// link.classList.add("site-nav__item");
+
+// const href = document.querySelector("[href='https://']");
+
+// href.style = "font-size: 30px";
+
+// 3
+
+// const hrefs = document.querySelectorAll('a[href^="http"]');
+
+// hrefs.forEach((href) => {
+//   href.style.color = "orange";
+// });
+
+// const firstLink = document.querySelector("a[href]");
+// firstLink.classList.add("style");
+// const lastLink = hrefs[hrefs.length - 1];
+// lastLink.classList.add("style");
+
