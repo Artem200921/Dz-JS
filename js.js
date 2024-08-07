@@ -2080,9 +2080,15 @@
 // 1
 
 const people = [
-  { name: "Ivan", balance: 100, friend: "Mark", friends: 2, skill:"Fly" },
-  { name: "Tom", balance: 200, friend: "Mark", friends: 6, skill:"Fly" },
-  { name: "Leim", balance: 400, friend: "Artem", friends: 3, skill:"Ice punch" },
+  { name: "Ivan", balance: 100, friend: "Mark", friends: 2, skill: "Fly" },
+  { name: "Tom", balance: 200, friend: "Mark", friends: 6, skill: "Fly" },
+  {
+    name: "Leim",
+    balance: 400,
+    friend: "Artem",
+    friends: 3,
+    skill: "Ice punch",
+  },
 ];
 
 // const res = people.reduce((acc, bal) => acc + bal.balance, 0);
@@ -2156,3 +2162,68 @@ const people = [
 // const lastLink = hrefs[hrefs.length - 1];
 // lastLink.classList.add("style");
 
+// DZ 6
+
+// 1
+
+// let i = 1;
+// while (i <= 10) {
+//   console.log(i);
+//   i++;
+// }
+
+// 2
+
+// for (let i = 2; i <= 20; i++) {
+//   if (i % 2 !== 0) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+// 3
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`7 * ${i} = ${7 * i}`);
+// }
+
+// 4
+
+// let arr = [1, 2, 3, 4, 5];
+// let i = 0;
+// while (i < arr.length) {
+//   console.log(arr[i]);
+//   i++;
+// }
+
+// 5
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] === 7) {
+//     break;
+//   }
+//   console.log(arr[i]);
+// }
+
+// 6
+
+// let n = 15;
+// for (let i = 1; i < n; i++) {
+//   if (i >= n) {
+//     break;
+//   }
+//   console.log(i);
+// }
+
+// 7
+
+// let i = 1;
+// while (i <= 20) {
+//   if (i % 3 === 0) {
+//     i++;
+//     continue;
+//   }
+//   console.log(i);
+//   i++;
+// }
