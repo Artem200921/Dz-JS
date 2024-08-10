@@ -2079,17 +2079,17 @@
 
 // 1
 
-const people = [
-  { name: "Ivan", balance: 100, friend: "Mark", friends: 2, skill: "Fly" },
-  { name: "Tom", balance: 200, friend: "Mark", friends: 6, skill: "Fly" },
-  {
-    name: "Leim",
-    balance: 400,
-    friend: "Artem",
-    friends: 3,
-    skill: "Ice punch",
-  },
-];
+// const people = [
+//   { name: "Ivan", balance: 100, friend: "Mark", friends: 2, skill: "Fly" },
+//   { name: "Tom", balance: 200, friend: "Mark", friends: 6, skill: "Fly" },
+//   {
+//     name: "Leim",
+//     balance: 400,
+//     friend: "Artem",
+//     friends: 3,
+//     skill: "Ice punch",
+//   },
+// ];
 
 // const res = people.reduce((acc, bal) => acc + bal.balance, 0);
 
@@ -2227,3 +2227,36 @@ const people = [
 //   console.log(i);
 //   i++;
 // }
+
+// DZ №17
+
+// 1
+
+const butt = document.getElementById("butt");
+
+butt.addEventListener("click", () => {
+  const inp = document.getElementById("input").value;
+  butt.textContent = inp;
+});
+
+// 2
+
+const img = document.getElementById("image");
+img.src =
+  "https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg";
+img.style.width = "100px";
+img.style.height = "100px";
+
+// 3
+
+const a = document.querySelector("a");
+img.alt = "Doggy";
+
+a.href = "https://www.google.com/";
+a.target = "_blank";
+
+// 4
+
+const listChild = document.querySelector("#list__child");
+listChild.textContent = "Це перша дитина списку!"
+
