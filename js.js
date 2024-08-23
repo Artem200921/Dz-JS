@@ -2230,33 +2230,182 @@
 
 // DZ №17
 
+// // 1
+
+// const butt = document.getElementById("butt");
+
+// butt.addEventListener("click", () => {
+//   const inp = document.getElementById("input").value;
+//   butt.textContent = inp;
+// });
+
+// // 2
+
+// const img = document.getElementById("image");
+// img.src =
+//   "https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg";
+// img.style.width = "100px";
+// img.style.height = "100px";
+
+// // 3
+
+// const a = document.querySelector("a");
+// img.alt = "Doggy";
+
+// a.href = "https://www.google.com/";
+// a.target = "_blank";
+
+// // 4
+
+// const listChild = document.querySelector("#list__child");
+// listChild.textContent = "Це перша дитина списку!"
+
+// Urok
+
 // 1
 
-const butt = document.getElementById("butt");
+// const butt = document.createElement("button");
+// butt.style.position = "absolute";
+// butt.style.top = "100px";
+// butt.style.left = "100px";
+// butt.textContent = "Natisny na mene!";
 
-butt.addEventListener("click", () => {
-  const inp = document.getElementById("input").value;
-  butt.textContent = inp;
-});
+// const img = document.createElement("img");
+// img.src =
+//   "https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg";
+// img.alt = "Little doggy";
+// img.style.width = "100px";
+// img.style.height = "100px";
+
+// const body = document.querySelector("body");
+
+// body.prepend(butt, img);
 
 // 2
 
-const img = document.getElementById("image");
-img.src =
-  "https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg";
-img.style.width = "100px";
-img.style.height = "100px";
+// const list = document.getElementById("list");
+
+// list.style = "font-weight:900";
+
+// const lishka = document.createElement("li");
+
+// lishka.textContent = "Privit!";
+
+// list.append(lishka);
+// list.rem
 
 // 3
 
-const a = document.querySelector("a");
-img.alt = "Doggy";
+// const list = document.getElementById("list");
 
-a.href = "https://www.google.com/";
-a.target = "_blank";
+// list.insertAdjacentHTML("beforebegin", "<h1>Hello</h1>")
 
 // 4
 
-const listChild = document.querySelector("#list__child");
-listChild.textContent = "Це перша дитина списку!"
+// const images = [
+//   "https://images.pexels.com/photos/16053278/pexels-photo-16053278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+//   "https://images.pexels.com/photos/13733057/pexels-photo-13733057.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+//   "https://images.pexels.com/photos/15851469/pexels-photo-15851469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+// ];
 
+// const div = document.getElementById("gallery");
+
+// function imagese(imga) {
+//   imga.forEach((img) =>
+//     div.insertAdjacentHTML(
+//       "beforebegin",
+//       `<img style="width:100px; height:100px" src="${img}">`
+//     )
+//   );
+// }
+
+// imagese(images)
+
+// DZ 18
+
+// 1
+
+// const list = document.querySelectorAll('#categories li');
+// console.log(`У списку ${list.length} категорії.`);
+
+// list.forEach(item => {
+//   const title = item.textContent;
+//   const count = item.querySelectorAll('li').length;
+//   console.log(`Категорія: ${title}`);
+//   console.log(`Кількість елементів: ${count}`);
+// });
+
+// 2
+
+// const list = document.getElementById("ingredients");
+
+// const ingredients = [
+//   "Картопля",
+//   "Гриби",
+//   "Часник",
+//   "Помідори",
+//   "Зелень",
+//   "Приправи",
+// ];
+
+// ingredients.forEach(item => {
+//   const li = document.createElement(`li`);
+//   li.textContent = item;
+//   list.appendChild(li)
+// });
+
+// 3
+
+// const list = document.getElementById("ingredients");
+
+// const images = [
+//   {
+//     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+//     alt: "White and Black Long Fur Cat",
+//   },
+//   {
+//     url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+//     alt: "Orange and White Koi Fish Near Yellow Koi Fish",
+//   },
+//   {
+//     url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+//     alt: "Group of Horses Running",
+//   },
+// ];
+
+// images.forEach((img) => {
+//   const im = document.createElement(`img`);
+//   const li = document.createElement("li");
+//   im.src = img.url;
+//   im.alt = img.alt;
+//   im.classList.add("img")
+//   li.classList.add("item")
+
+//   list.appendChild(li);
+//   li.appendChild(im);
+// });
+
+// 4
+
+// const count = document.getElementById("counterValue");
+// const plus = document.getElementById("increment");
+// const minus = document.getElementById("decrement");
+
+// let i = 0;
+
+// function updateUI() {
+//   count.textContent = i;
+// }
+
+// function increment() {
+//   i += 1;
+//   updateUI();
+// }
+
+// function decrement() {
+//   i -= 1;
+//   updateUI();
+// }
+
+// plus.addEventListener("click", increment);
+// minus.addEventListener("click", decrement);
