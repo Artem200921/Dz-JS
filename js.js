@@ -2409,3 +2409,301 @@
 
 // plus.addEventListener("click", increment);
 // minus.addEventListener("click", decrement);
+
+// lesson
+
+// 1
+
+// const form = document.querySelector("#form");
+
+// form.addEventListener("submit", (evt) => {
+//   evt.preventDefault()
+//   alert("Ви зареєструвалися успішно! Дякую!");
+// });
+
+// 2
+
+// const input = document.querySelector("#input");
+
+// const form = document.querySelector("#form");
+
+// form.addEventListener("submit", (evt) => {
+//   evt.preventDefault();
+//   alert(`Вітаю, ${input.value}`)
+// });
+
+// 3
+
+// const clear = document.querySelector(".js-clear");
+// const jsOutput = document.querySelector(".js-output");
+// const output = document.querySelector(".output");
+
+// let array = [];
+
+// document.addEventListener("keypress", (evt) => {
+//   array.push(evt.key);
+//   jsOutput.textContent = array.join("");
+// });
+
+// clear.addEventListener("click", () => {
+//   array = [];
+//   jsOutput.textContent = "";
+// });
+
+// 4
+
+// const message = document.querySelector("#message");
+// const input = document.querySelector("#input");
+
+// document.addEventListener("keypress", (evt) => {
+//   if (evt.key == "Enter") {
+//     message.textContent = input.value;
+//   }
+// });
+
+// 5
+
+// document.addEventListener("keydown", (evt) => {
+//   console.log(evt.code);
+// });
+
+// 6
+
+// const box = document.querySelector("#box");
+
+// document.addEventListener("keydown", (evt) => {
+//   if (evt.key === "y") {
+//     box.classList.remove("green");
+//     box.classList.add("yellow");
+//   } else {
+//     console.log("Error");
+//   }
+//   if (evt.key === "g") {
+//     box.classList.remove("yellow");
+//     box.classList.add("green");
+//   } else {
+//     console.log("Error");
+//   }
+// });
+
+// DZ 19
+
+// mode
+
+const dark = document.querySelector(".dark-mode");
+const light = document.querySelector(".light-mode");
+
+dark.addEventListener("click", () => {
+  document.body.classList.add("dark-bg", "dark-mode-text");
+  document.body.classList.remove("light-bg", "light-mode-text");
+});
+
+light.addEventListener("click", () => {
+  document.body.classList.add("light-bg", "light-mode-text");
+  document.body.classList.remove("dark-bg", "dark-mode-text");
+});
+
+// dz
+
+// 1
+
+// const openModalBtn = document.querySelector('button[data-action="open-modal"]');
+// const closeModalBtn = document.querySelector(
+//   'button[data-action="close-modal"]'
+// );
+// const backdrop = document.querySelector(".js-backdrop");
+// const modal = document.querySelector(".modal");
+
+// openModalBtn.addEventListener("click", () => {
+//   backdrop.classList.add("show-modal");
+// });
+
+// closeModalBtn.addEventListener("click", () => {
+//   backdrop.classList.remove("show-modal");
+// });
+
+// backdrop.addEventListener("click", (event) => {
+//   if (event.target === backdrop) {
+//     backdrop.classList.remove("show-modal");
+//   }
+// });
+
+// 3
+
+// const radio = document.querySelectorAll(".radiob");
+
+// const form = document.querySelector("form");
+
+// radio.forEach((radioButton) => {
+//   radioButton.addEventListener("change", (evt) => {
+//     form.style.backgroundColor = evt.target.value;
+//   });
+// });
+
+// 4
+
+// const input = document.querySelector("#name-input");
+// const span = document.querySelector("#name-output");
+
+// let array = [];
+
+// document.addEventListener("keypress", (evt) => {
+//   array.push(evt.key);
+//   span.textContent = array.join("");
+//   if (input.value === "") {
+//     array = [];
+//     span.textContent = "незнайомець";
+//   } else {
+//     console.log("");
+//   }
+// });
+
+// 4.1
+
+// document.addEventListener("keypress", (evt) => {
+//   if (evt.key == "Enter") {
+//     const input = document.querySelector("#validation-input");
+
+//     if (input.value.length >= input.dataset.length) {
+//       input.classList.add("valid");
+//       input.classList.remove("invalid");
+//     } else if (input.value.length <= input.dataset.length) {
+//       input.classList.add("invalid");
+//       input.classList.remove("valid");
+//     }
+//   } else {
+//     console.log("");
+//   }
+// });
+
+// 5
+
+// const changeFont = document.querySelector("#font-size-control");
+// const subtitle = document.getElementById("text");
+
+// changeFont.addEventListener(("input"), () => {
+//   subtitle.style.fontSize = changeFont.value + "px"
+// });
+
+// DZ 20
+
+// let slideIndex = 0;
+// showSlides();
+
+// function showSlides() {
+//   let i;
+//   let slides = document.getElementsByClassName("image");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) {
+//     slideIndex = 1;
+//   }
+//   slides[slideIndex - 1].style.display = "block";
+//   setTimeout(showSlides, 2000);
+// }
+
+// Urok
+
+// 1
+
+// const list = document.getElementById("userList");
+// list.addEventListener("click", (event) => {
+//   if (event.target.tagName === "LI") {
+//     event.target.remove();
+//   }
+// });
+
+// 2
+
+// const list = document.getElementById("task-list");
+// const newTaskInput = document.getElementById("new-task");
+// const addButton = document.getElementById("add-task");
+
+// addButton.addEventListener("click", () => {
+//   const text = newTaskInput.value.trim();
+//   if (text !== "") {
+//     const li = document.createElement("li");
+//     li.innerHTML = `
+//                 <input type="checkbox" class="task-checkbox">
+//                 <span>${text}</span>
+//                 <button class="delete-task">Видалити</button>
+//             `;
+//     list.appendChild(li);
+//     newTaskInput.value = "";
+//   }
+// });
+
+// list.addEventListener("click", (event) => {
+//   if (event.target.classList.contains("delete-task")) {
+//     const li = event.target.parentElement;
+//     list.removeChild(li);
+//   } else if (event.target.classList.contains("task-checkbox")) {
+//     const li = event.target.parentElement;
+//     if (event.target.checked) {
+//       li.querySelector("span").classList.add("completed");
+//     } else {
+//       li.querySelector("span").classList.remove("completed");
+//     }
+//   }
+// });
+
+// 3
+
+// const palette = document.querySelector(".color-palette");
+// const output = document.querySelector(".output");
+// const item = document.querySelectorAll(".item");
+
+// item.forEach((elem) => elem.style.backgroundColor = elem.dataset.color)
+
+// palette.addEventListener("click", (event) => {
+//   const selectedColor = event.target.dataset.color;
+//   output.textContent = `Selected color: ${selectedColor}`;
+//   output.style.color = selectedColor;
+// });
+
+// 4
+
+// const jsNav = document.querySelector(".js-nav");
+// const btn = document.querySelectorAll(".btn");
+
+// jsNav.addEventListener("click", (event) => {
+//   if (event.target.classList.contains("btn")) {
+//     const activeButton = jsNav.querySelector(".active");
+//     if (activeButton) {
+//       activeButton.classList.remove("active");
+//     }
+//     event.target.classList.add("active");
+//   }
+// });
+
+// Front-end 4, DZ 2
+
+// 1
+
+// const slider = document.querySelector(".slider__input");
+// const image = document.querySelector(".slider__image");
+
+// function resizeImage() {
+//   const scale = slider.value / 100;
+//   image.style.width = `${300 * scale}px`;
+//   image.style.height = `${300 * scale}px`;
+// }
+
+// const debouncedResizeImage = _.debounce(resizeImage, 100);
+
+// slider.addEventListener("input", debouncedResizeImage);
+
+// 2
+
+// const box = document.getElementById("box");
+
+// function moveBox(event) {
+//   box.style.left = `${event.clientX}px`;
+//   box.style.top = `${event.clientY}px`;
+// }
+
+// const debouncedMoveBox = _.debounce(moveBox, 100);
+
+// document.addEventListener("mousemove", debouncedMoveBox);
