@@ -2707,3 +2707,83 @@ light.addEventListener("click", () => {
 // const debouncedMoveBox = _.debounce(moveBox, 100);
 
 // document.addEventListener("mousemove", debouncedMoveBox);
+
+// urok
+
+// 1
+
+// const boxes = document.querySelectorAll(".box");
+
+// const options = {
+//   root: null,
+//   threshold: 0.6,
+// };
+
+// const callback = (entries, observer) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add("visible");
+//     } else {
+//       entry.target.classList.remove("visible");
+//     }
+//   });
+// };
+
+// const observer = new IntersectionObserver(callback, options);
+// boxes.forEach((box) => observer.observe(box));
+
+// 2
+
+// const list = document.querySelectorAll(".fruits-list li");
+// const options = {
+//   root: null,
+//   threshold: 0.6,
+// };
+
+// const callback = (entries, observer) => {
+//   entries.forEach((entry) => {
+//     const titleImg = entry.target.querySelector("h3");
+//     const img = entry.target.querySelector("img");
+//     if (entry.isIntersecting) {
+//       img.style.opacity = 1;
+//       titleImg.style.color = "red";
+//       img.classList.add("visible");
+//     } else {
+//       img.style.opacity = 0;
+//       titleImg.style.color = "black";
+//       img.classList.remove("visible");
+//     }
+//   });
+// };
+
+// const observer = new IntersectionObserver(callback, options);
+// list.forEach((box) => observer.observe(box));
+
+// DZ - 2 №3
+
+// const images = document.querySelectorAll("img[data-src]");
+
+// const loadImages = (image) => {
+//   image.src = image.getAttribute("data-src");
+//   image.onload = () => {
+//     image.removeAttribute("data-src");
+//     const nextImage = image.nextElementSibling;
+//     if (nextImage && nextImage.tagName === "IMG") {
+//       imageObserver.observe(nextImage);
+//     }
+//   };
+// };
+
+// const imageObserver = new IntersectionObserver((entries, observer) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       loadImages(entry.target);
+//       observer.unobserve(entry.target);
+//     }
+//   });
+// });
+
+// const firstImage = images[0];
+// if (firstImage) {
+//   imageObserver.observe(firstImage);
+// }
